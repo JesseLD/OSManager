@@ -1,10 +1,19 @@
 const navbar = document.querySelector('nav')
-navbar.style.display='none'
-
 const btn = document.querySelector('#print')
+const buttons = document.querySelector('.buttons')
 
+function hideElementsOnPrint(){
+  navbar.style.display='none'
+
+}
+
+hideElementsOnPrint();$
 
 btn.addEventListener('click',(e)=>{
-  btn.style.opacity = '0'
+  buttons.style.opacity = '0'
   window.print()
 })
+
+
+
+

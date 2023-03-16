@@ -13,13 +13,12 @@ router.get("/",(req,res)=>{
       res.render("OS/index",{os:os})
     }).catch((err)=>{
       req.flash("err_msg","Houve um erro ao listar as Ordens de Serviço");
-      res.redirect("os/new");
+      res.redirect("OS/new");
     });
 });
 
 router.get("/new",(req,res)=>{
-
-  res.render("os/newOS");
+  res.render("OS/newOS");
 
 });
 

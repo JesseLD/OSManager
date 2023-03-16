@@ -1,0 +1,128 @@
+<head>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<div class="container">
+  <div class="os-container">
+    <div class="os-header">
+      <div class="os-image-container"><img  class="os-logo"src="/img/Mintus.png" alt=""></div>
+      <div class="os-info">
+        <ul>
+          <li class="fw-bold fs-5"><ion-icon name="logo-whatsapp" ></ion-icon> (75) 9 8828-7627</li>
+          {{!-- <li>none</li> --}}
+        </ul>
+        <ul>
+          <li class="fw-bold fs-5"><ion-icon name="reader-outline" class="fs-5"></ion-icon> Ordem de Serviço</li>
+          <li class="fw-bold fs-5"><ion-icon name="information-circle-outline" class="fs-5"></ion-icon> N° {{os.osNumber}}</li>
+        </ul>
+      </div>
+    </div>
+    <hr>
+    <div class="os-body">
+      <ul>
+        <li><strong>Nome do cliente:</strong> {{os.name}}</li>
+        <li><strong>Telefone:</strong> {{os.phone}} </li>
+        <li><strong>Modelo: </strong>{{os.model}}</li>
+        <li><strong>Defeito:</strong> {{os.issue}}</li> <br>
+      </ul>
+    </div>
+    <hr>
+    <div class="os-info">
+      <ul class="os-checklist">
+        <li class="fw-bold">Os Itens abaixo estão funcionando?</li>
+        <table class="table table-striped table-bordered">
+          <thead class="os-table">
+            <tr>
+              <td class="os-table-item-offset-1">Checklist⠀</td>
+              <td>Sim</td>
+              <td>Não</td>
+            </tr>
+          </thead>
+          <tbody class="os-table">
+             <tr class="teste">
+               <td class="os-table-checklist-item-name ">Tela / Touch Screen</td>
+               <td>(&nbsp;&nbsp;&nbsp;)</td>
+               <td>(&nbsp;&nbsp;&nbsp;)</td>
+            </tr>
+             <tr>
+               <td class="os-table-checklist-item-name">Todas as Teclas</td>
+               <td>(&nbsp;&nbsp;&nbsp;)</td>
+               <td>(&nbsp;&nbsp;&nbsp;)</td>
+            </tr>
+             <tr>
+               <td class="os-table-checklist-item-name">Sensor de proximidade</td>
+               <td>(&nbsp;&nbsp;&nbsp;)</td>
+               <td>(&nbsp;&nbsp;&nbsp;)</td>
+            </tr>
+             <tr>
+               <td class="os-table-checklist-item-name">Rede de dados</td>
+               <td>(&nbsp;&nbsp;&nbsp;)</td>
+               <td>(&nbsp;&nbsp;&nbsp;)</td>
+            </tr>
+             <tr>
+               <td class="os-table-checklist-item-name">Wifi / bluetooth</td>
+               <td>(&nbsp;&nbsp;&nbsp;)</td>
+               <td>(&nbsp;&nbsp;&nbsp;)</td>
+            </tr>
+             <tr>
+               <td class="os-table-checklist-item-name">Microfones⠀</td>
+               <td>(&nbsp;&nbsp;&nbsp;)</td>
+               <td>(&nbsp;&nbsp;&nbsp;)</td>
+            </tr>
+             <tr>
+               <td class="os-table-checklist-item-name">Alto Falantes</td>
+               <td>(&nbsp;&nbsp;&nbsp;)</td>
+               <td>(&nbsp;&nbsp;&nbsp;)</td>
+            </tr>
+            <tr>
+               <td class="os-table-checklist-item-name">Todas as Câmeras</td>
+               <td>(&nbsp;&nbsp;&nbsp;)</td>
+               <td>(&nbsp;&nbsp;&nbsp;)</td>
+            </tr>
+
+             <tr>
+               <td class="os-table-checklist-item-name">Conector de carga</td>
+               <td>(&nbsp;&nbsp;&nbsp;)</td>
+               <td>(&nbsp;&nbsp;&nbsp;)</td>
+            </tr>
+
+             <tr>
+               <td class="os-table-checklist-item-name os-table-item-offset-1">Biometria</td>
+               <td>(&nbsp;&nbsp;&nbsp;)</td>
+               <td>(&nbsp;&nbsp;&nbsp;)</td>
+            </tr>
+
+             <tr>
+               <td class="os-table-checklist-item-name os-table-item-offset-2">Ligação⠀</td>
+               <td>(&nbsp;&nbsp;&nbsp;)</td>
+               <td>(&nbsp;&nbsp;&nbsp;)</td>
+            </tr>
+          </tbody>
+        </table>
+      </ul>
+      <ul class="os-guarantee">
+        <li class="os-guarantee">1- A Garantia do serviço executado e dos componentes trocados terá validade de 90 dias a partir da data de entrega do aparelho</li>
+        <li class="os-guarantee">2- A nossa Garantia não cobre danos causados por queda, manipulado por terceiros queimar por oscilação, umidade, ou violação do lacre de garantia</li>
+        <li class="os-guarantee">3- Após aprovado o orçamento, o cliente terá o prazo máximo de 90 dias, o aparelho será absolvido ou sucateado</li>
+        <hr>
+        <ul class="os-signature">
+          <li class="sign os-margin-left-offset-30">Ass:</li>
+          <li class="os-margin-left-offset-30">Data que foi retirado: {{os.exitDate}} </li>
+          <li class="os-margin-left-offset-30">Valor do Conserto: R$ {{os.value}}</li> <br>
+          <li class="os-margin-left-offset-30">
+            <em>
+              "Nem todo aquele que me diz: 'Senhor, Senhor', entrará no Reino dos céus, mas apenas aquele que faz a vontade de meu Pai que está nos céus. Mateus 7:21
+            </em>
+          </li>
+        </ul>
+      </ul>
+    </div>
+  </div>
+  <div class="buttons">
+    <button class="btn btn-success mt-4 mb-4"><a href="/os/verOS/{{os.osNumber}}">Voltar</a></button>
+    <button id="print" class="btn btn-primary mt-4 mb-4">Imprimir</button>
+  </div>
+</div>
+
+
+<script src="/js/printOs.js"></script>

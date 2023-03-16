@@ -1,0 +1,36 @@
+ <a href="/os/new"><button class="btn btn-success">Nova OS</button></a>
+<div class="row">
+
+  {{#each os}}
+
+      <div class="col">
+        <div class="card mt-4" style="width: 12rem">
+          <div class="card-body">
+            <h5 class="card-title">{{name}} - N°{{osNumber}}</h5>
+            <p>Defeito: {{issue}}</p>
+            <p>Entrada: {{enterDate}}</p>
+            <a href="/os/verOS/{{osNumber}}"><button class="btn btn-success">Ver</button></a>
+          </div>
+        </div>
+      </div>
+      {{else}}
+  
+  <h4 class="mt-4">Nenhuma Ordem de Serviço cadastrada!</h4>
+  <p>Crie uma nova agora!</p>
+  <a href="/os/new"><button class="btn btn-success">Nova Ordem</button></a> 
+  
+  {{/each}}
+</div>
+ 
+
+
+{{!-- 
+{{else}}
+  
+  <h4>Nenhuma Ordem de Serviço cadastrada!</h4>
+  <p>Crie uma nova agora!</p>
+  <a href="/os/new"><button class="btn btn-success">Nova Ordem</button></a> --}}
+
+
+
+

@@ -1,0 +1,22 @@
+{
+  "dependencies": {
+    "body-parser": "^1.20.1",
+    "connect-flash": "^0.1.1",
+    "express": "^4.18.2",
+    "express-handlebars": "^6.0.7",
+    "express-session": "^1.17.3",
+    "mongoose": "^6.9.1",
+    "nodemon": "^2.0.20"
+  },
+  "name": "osmanager",
+  "version": "1.0.0",
+  "description": "a simple os manager",
+  "main": "app.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "author": "JesseLD",
+  "license": "ISC"
+}

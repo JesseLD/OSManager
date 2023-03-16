@@ -1,0 +1,56 @@
+<h2>Informações da Ordem de Serviço</h2>
+
+<table class="table mt-2">
+  <tbody>
+    <tr>
+      <th>&nbsp;</th>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <th class="table-secondary">Numero da OS</th>
+      <td>{{os.osNumber}}</td>
+    </tr>
+    <tr>
+      <th class="table-secondary">Nome do Cliente</th>
+      <td>{{os.name}}</td>
+    </tr>
+    <tr>
+      <th class="table-secondary">Telefone do Cliente</th>
+      <td>{{os.phone}}</td>
+    </tr>
+    <tr>
+      <th class="table-secondary">Defeito </th>
+      <td>{{os.issue}}</td>
+    </tr>
+    <tr>
+      <th class="table-secondary">Modelo do Dispositivo</th>
+      <td>{{os.model}}</td>
+    </tr>
+    <tr>
+      <th class="table-secondary">Data de Entrada</th>
+      <td>{{os.enterDate}}</td>
+    </tr>
+    <tr>
+      <th class="table-secondary">Data de Saida</th>
+      <td>{{os.exitDate}}</td>
+    </tr>
+    <tr>
+      <th class="table-secondary">Valor do Serviço</th>
+      <td>{{os.value}}</td>
+    </tr>
+  </tbody>
+</table>
+
+  <div class="d-flex">
+    <a class="me-4" href="/os/editar/{{os.osNumber}}"><button class="btn btn-success">Editar</button></a>
+
+    <a href="/os/print/{{os.osNumber}}" class="me-4"><button class="btn btn-success">Imprimir</button></a>
+    
+    <form action="/os/deletar" method="post">
+      <input type="hidden" name="id" value="{{os._id}}">
+      <button class="btn btn-danger">Deletar</button>
+    </form>
+
+    
+  </div>
+  

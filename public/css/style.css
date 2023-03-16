@@ -1,0 +1,125 @@
+.bg-custom{
+  background-color: #E7ECF0;
+  padding: 60px 30px;
+}
+.hide{
+  display: none;
+}
+.os-container{
+  border: 1px solid black;
+  border-radius: 5px;
+  max-width: 600px;
+  margin: auto;
+}
+.os-logo{
+  width: 100px;
+}
+.os-header{
+  display: flex;
+  align-items: center;
+  padding: 20px 20px 0px 20px;
+  
+}
+.os-info{
+  display: flex;
+  
+}
+.os-info>ul>{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.os-info>ul>li{
+  list-style: none;
+}
+.os-icon{
+  font-size: 1.2rem;
+  
+}
+
+.os-body>ul>li{
+  list-style: none;
+  text-transform: uppercase;
+}
+/* .os-body>ul>li::after{
+  content: '____________________________________________';
+} */
+.os-checklist{
+  max-width: 200px;
+}
+li.fw-bold{
+  font-size: 0.8rem;
+}
+.os-table-checklist-item-name{
+ 
+  text-transform: uppercase;
+}
+.os-table>tr>td{
+  font-size: 0.5rem;
+  font-weight: bold;
+}
+.os-table>tr{
+  display: flex;
+  justify-content: center;
+}
+.os-table-item-offset-1::after{
+  content: '⠀⠀⠀';
+}
+.os-table-item-offset-2::after{
+  content: '⠀⠀⠀⠀';
+}
+.os-table-item-offset-3::after{
+  content: '⠀⠀⠀⠀⠀⠀⠀⠀';
+}
+
+.os-signature{
+  list-style: none;
+}
+
+.os-margin-left-offset-30{
+  margin-left: -30px;
+}
+.sign::after{
+  content: '_________________________';
+}
+
+.buttons{
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+a{
+  text-decoration: none;
+  color: white;
+}
+@media screen and (max-width: 501px) {
+  .os-guarantee{
+    font-size: 0.8rem;
+  }
+  .os-icon{
+    font-size: 1rem;
+    
+  }
+  .os-table>tr>td{
+    font-size: 0.4rem;
+    font-weight: bold;
+  }
+}
+@media screen and (max-width: 450px) {
+  .os-logo{
+    width: 80px;
+  }
+  .os-guarantee{
+    font-size: 0.4rem;
+    margin-right: 10px;
+  }
+  .os-icon{
+    font-size: 0.6rem;
+    
+  }
+  .os-table>tr>td{
+    font-size: 0.28rem;
+    font-weight: bold;
+  }
+  
+}

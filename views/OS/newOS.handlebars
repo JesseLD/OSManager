@@ -1,0 +1,39 @@
+{{#each error}}
+  <div class="alert alert-danger">{{error}}</div>
+{{/each}}
+
+<div class="card mb-4">
+  <div class="card-body">
+    <h1 class="mb-4">Nova Ordem de Serviço</h1>
+
+    <form action="/os/new" method="post">
+      <label for="osNumber">Numero da ordem de serviço:</label>
+      <input class="form-control"type="number" name="osNumber" id="osNumber" placeholder="Numero da OS, ex: 1" required min="1">
+
+      <label for="name">Nome do cliente:</label>
+      <input class="form-control "type="text" name="name" id="name" placeholder="Nome do cliente" required>
+
+      <label for="phone">Telefone do cliente:</label>
+      <input class="form-control" type="tel" name="phone" id="phone" placeholder="Numero do cliente, *Somente numeros*" required>
+
+      <label for="model">Modelo:</label>
+      <input class="form-control "type="text" name="model" id="model" placeholder="Modelo do dispositivo" required>
+
+      <label for="issue">Defeito:</label>
+      <textarea class="form-control" name="issue" id="issue" cols="15" rows="5" placeholder="Insira o defeito aqui" required></textarea>
+
+      <label for="enterDate">Data de Entrada:</label>
+      <input class="form-control "type="date" name="enterDate" id="enterDate" required>
+
+      <label for="exitDate">Data de Saida:</label>
+      <input class="form-control "type="date" name="exitDate" id="exitDate">
+
+      <label for="fixValue">Valor do conserto:</label>
+      <input class="form-control" type="number" name="fixValue" id="fixValue" placeholder="Valor do conserto" step=".01" required>
+
+      <button class="btn btn-success mt-4">Enviar</button>
+    </form>
+
+
+  </div>
+</div>
